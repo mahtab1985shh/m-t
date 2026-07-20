@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="نقشه راه اجرایی بنیان‌گذاران Mahtab & Tom" />
+  <title>Founder Roadmap | Mahtab & Tom</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span>MT</span><div><b>Mahtab & Tom</b><small>FOUNDER OS</small></div></div>
+    <button class="nav active" data-view="roadmap">⌁ <span>نقشه راه</span></button>
+    <button class="nav" data-view="journal">♡ <span>خاطرات و تجربه‌ها</span></button>
+    <p class="label">فازهای شرکت</p><div id="phaseNav" class="phase-nav"></div>
+  </aside>
+  <main>
+    <header><div class="mobile-logo">MT</div><label>⌕ <input id="search" placeholder="جستجو در نقشه راه..." /></label><button id="newMemory" class="primary">＋ ثبت تجربه</button></header>
+    <div id="notice" class="notice">نسخه بازبینی GitHub Pages — اطلاعات روی همین دستگاه ذخیره می‌شود.</div>
+    <section id="roadmapView">
+      <div class="hero"><div><span class="kicker">FOUNDER ROADMAP · نسخه اجرایی ۱.۰</span><h1>شرکت را بسازیم،<br><em>پیش از آن‌که کسب‌وکار را بزرگ کنیم.</em></h1><p>فضایی مشترک برای تصمیم‌گیری، یادگیری و تبدیل مسیر بنیان‌گذاری به اقدام‌های روشن و قابل سنجش.</p></div><div class="progress-card"><div id="overallRing" class="ring"><b id="overallValue">۰٪</b></div><div><b>پیشرفت کل مسیر</b><small id="overallText">هنوز شروع نشده</small></div></div></div>
+      <div id="phaseStrip" class="phase-strip"></div>
+      <section class="workspace"><div id="phaseHeader" class="phase-header"></div><div id="tabs" class="tabs"></div><div id="content" class="content"></div></section>
+    </section>
+    <section id="journalView" class="hidden"><div class="journal-hero"><div><small>دفتر سفر بنیان‌گذاران</small><h1>لحظه‌ها را ثبت کنید؛<br>درس‌ها را نگه دارید.</h1><p>تصمیم‌ها، موفقیت‌ها و تجربه‌هایی که روزی داستان شرکت شما خواهند شد.</p></div><button id="heroMemory">＋ ثبت خاطره جدید</button></div><div id="journalGrid" class="journal-grid"></div></section>
+  </main>
+  <div id="modal" class="modal hidden"><form id="memoryForm"><div class="modal-head"><div><small>دفتر بنیان‌گذاران</small><h2>ثبت یک تجربه تازه</h2></div><button type="button" id="closeModal">×</button></div><div class="form-grid"><label>عنوان تجربه<input name="title" required placeholder="مثلاً اولین گفت‌وگو با مشتری"></label><label>فاز<select name="phaseId" id="phaseSelect"></select></label><label class="wide">چه اتفاقی افتاد؟<textarea name="story" required rows="4"></textarea></label><label class="wide">چه درسی گرفتید؟<textarea name="lesson" rows="2"></textarea></label><label>نویسنده<input name="author" value="Mahtab & Tom"></label><label>تاریخ<input name="date" type="date" required></label><label class="wide upload">عکس این لحظه<input name="image" type="file" accept="image/*"><small>برای این نسخه حداکثر ۱ مگابایت</small></label></div><footer><button type="button" id="cancelModal">انصراف</button><button class="primary">ثبت در دفتر خاطرات</button></footer></form></div>
+  <script src="app.js"></script>
+</body>
+</html>
